@@ -552,7 +552,7 @@ export default function SummitReady() {
                       onFocus={e => e.target.style.borderColor = colors.accent}
                       onBlur={e => e.target.style.borderColor = colors.border}
                     />
-                    <button onClick={() => { if (email.includes("@")) { fetch("https://formspree.io/f/EMAIL_FORM_ID", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email: email, adventure: adventure.name, score: result.score }) }); setEmailSubmitted(true); } }} style={{
+                    <button onClick={() => { if (email.includes("@")) { fetch("https://formspree.io/f/mjgenrdg", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email: email, adventure: adventure.name, score: result.score }) }); setEmailSubmitted(true); } }} style={{
                       fontFamily: font, fontSize: 14, fontWeight: 600, color: "#fff",
                       background: email.includes("@") ? `linear-gradient(135deg, ${colors.accent}, ${colors.accentSoft})` : colors.surface,
                       border: "none", borderRadius: 10, padding: "12px 24px", cursor: email.includes("@") ? "pointer" : "default",
@@ -609,7 +609,7 @@ export default function SummitReady() {
                         onFocus={e => e.target.style.borderColor = colors.accent}
                         onBlur={e => e.target.style.borderColor = colors.border}
                       />
-                      <button onClick={() => { fetch("https://formspree.io/f/FEEDBACK_FORM_ID", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ useful: feedback, comment: feedbackText, adventure: adventure.name, score: result.score }) }); setFeedbackSubmitted(true); }} style={{
+                      <button onClick={() => { fetch("https://formspree.io/f/mqedrbob", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ useful: feedback, comment: feedbackText, adventure: adventure.name, score: result.score }) }); setFeedbackSubmitted(true); }} style={{
                         fontFamily: font, fontSize: 13, fontWeight: 600, color: colors.text,
                         background: colors.surfaceLight, border: `1px solid ${colors.border}`,
                         borderRadius: 10, padding: "10px 20px", cursor: "pointer", marginTop: 10,
